@@ -16,7 +16,7 @@ public class StaticPointcutDemo {
 
 		Pointcut pc = new SimpleStaticPointcut();
 		Advice advice = new SimpleAdvice();
-		// aspect is called advisor sing aop
+		// aspect is called advisor spring aop
 		Advisor advisor = new DefaultPointcutAdvisor(pc, advice);
 
 		ProxyFactory pf = new ProxyFactory();

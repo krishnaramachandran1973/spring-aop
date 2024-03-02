@@ -7,7 +7,7 @@ public class Main {
 		Agent target = new Agent();
 
 		ProxyFactory pf = new ProxyFactory();
-		pf.addAdvice(new AgentDecorator());
+		pf.addAdvice(new AgentAdvice());
 		pf.setTarget(target);
 
 		Agent proxy = (Agent) pf.getProxy();
